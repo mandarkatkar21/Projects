@@ -7,12 +7,7 @@ This project focuses on credit risk analysis using machine learning techniques t
 The goal of this project is to develop and evaluate different machine learning models to classify loan applications into approved and non-approved categories based on customer attributes.
 
 ## Dataset
-The dataset contains various features related to customer demographics, credit history, and financial details. The target variable, `Approved_Flag`, represents whether a loan application was approved (P1, P2, P3, P4).
-
-### Features Used:
-- **Demographic Data:** `MARITALSTATUS`, `GENDER`
-- **Credit Inquiry Data:** `last_prod_enq2`, `first_prod_enq2`
-- **Financial Information:** Various numerical fields related to credit history and risk factors
+The dataset contains various features related to customer demographics, credit history, and financial details. The target variable, `Approved_Flag`,classifies customers into predefined categories based on past trends (P1, P2, P3, P4).
 
 ## Data Preprocessing
 1. **Handling Missing Values:** Missing values were treated using imputation techniques.
