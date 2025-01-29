@@ -15,7 +15,7 @@ The dataset contains various features related to customer demographics, credit h
    - Categorical variables (`MARITALSTATUS`, `GENDER`) were one-hot encoded.
    - Target variable `Approved_Flag` was label-encoded.
 3. **Feature Selection:** Statistical techniques like Variance Inflation Factor (VIF) and ANOVA were used to retain important features.
-4. **Scaling:** Numeric variables were standardized using Min-Max scaling.
+
 
 ## Model Training
 Several machine learning models were trained and evaluated:
@@ -26,13 +26,12 @@ Several machine learning models were trained and evaluated:
 ### Model Evaluation Metrics:
 - Accuracy
 - Precision, Recall, F1-score
-- Confusion Matrix
 
 ## Hyperparameter Tuning
-GridSearchCV was used for hyperparameter tuning of Random Forest and XGBoost to improve model performance.
+RandomizedSearchCV and GridSearchCV was used for hyperparameter tuning of  XGBoost to improve model performance.
 
 ## Results
-- Random Forest and XGBoost outperformed the Decision Tree model.
+- XGBoost outperformed the Decision Tree model.
 - Feature importance analysis helped in identifying the key factors affecting loan approval.
 
 ## Installation & Usage
@@ -40,28 +39,10 @@ GridSearchCV was used for hyperparameter tuning of Random Forest and XGBoost to 
 - Python 3.7+
 - Required Libraries: `pandas`, `numpy`, `scikit-learn`, `xgboost`, `matplotlib`, `seaborn`
 
-### Setup:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/credit-risk-analysis.git
-   cd credit-risk-analysis
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the main script:
-   ```bash
-   python main.py
-   ```
 
 ## Conclusion
 This project demonstrates how machine learning can be leveraged for credit risk assessment. Further improvements can be made by exploring deep learning models and incorporating more financial indicators.
 
-## Authors
-- Your Name
-- Contact: your.email@example.com
 
-## License
-This project is licensed under the MIT License.
+
 
